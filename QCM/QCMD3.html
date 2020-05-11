@@ -1,0 +1,58 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>QCM</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleC.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	QCM3 sur le système GPS
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	<h1>  </h1>		<!-- balise qui permet de donner le titre principal de la page-->
+	<form name="quizz" >
+		<div>
+			Le GPS nous localise grâce à<br/>
+			<input type="radio" name="q1" value="1"/>des satellites<br/>
+			<input type="radio" name="q1" value="0"/>des antennes placées sur Terre<br/>
+			<input type="radio" name="q1" value="0"/>des caméras<br/>
+			<input type="text" name="rep1"  size="180" disabled /> 
+		</div><br/>
+		<div>
+			Le GPS est<br/>
+			<input type="radio" name="q2" value="1"/>le système de géolocalisation américain<br/>
+			<input type="radio" name="q2" value="0"/>le système de géolocalisation mondial <br/>
+			<input type="radio" name="q2" value="0"/>le système de géolocalisation européen<br/>
+			<input type="text" name="rep2"  size="180" disabled /> 
+		</div><br/>
+		<div>
+			Le système européen concurent du système GPS est <br/>
+			<input type="radio" name="q3" value="0"/>le système Ganymède<br/>
+			<input type="radio" name="q3" value="0"/>le système Beidou<br/>
+			<input type="radio" name="q3" value="1"/>le système Galileo<br/>
+			<input type="text" name="rep3"  size="180" disabled /> 
+		</div><br/>	
+		<div>
+			<input type="text" name="reponse"  size="300" disabled value="Une fois que vous aurez cliqué le bouton Valider, vous ne pourrez plus répondre à aucune question" /> 
+			<input type="button" name="bouton" value="Valider" onClick="verification(2)" />
+		</div>
+		<a href = "QCMD4.html"> Passer au QCM4 sur la confidentialité des données de localisation </a><br/><br/>
+		<a href = "QCMD.html"> Revenir à la page d'acceuil sur les QCM </a> 	
+		<p id="explications" style="visibility:hidden;">
+			<img type="image" id="ph1" name="photo1" src="GPS1.png"  alt=""  width="450" height="330"  />
+			<br/><br/>
+			<b><u>Compléments d'explications :</u></b><br/><br/>
+			Le <b>Global Positioning System</b> (GPS) est un système de positionnement par satellites conçu par et pour l'armée des États-Unis et sous son contrôle.<br/><br/>
+			Mis en place à des fins militaires à partir de 1973, le système avec 24 satellites est totalement opérationnel en 1995 et s'ouvre au civil en 2000. <br/><br/><br/><br/><br/><br/><br/>
+			<img type="image" id="ph3" name="photo3" src="GPS2.png"  alt=""  width="450" height="450"  />
+			L'Europe (avec Galileo), la Chine (avec Beidou puis Compass), la Russie (avec GLONASS) et l'Inde (avec l'IRNSS),<br/>
+			conscients de l'intérêt stratégique d'un tel système de positionnement par satellites développent depuis plusieurs années des systèmes concurrents. <br/><br/><br/><br/>
+			Le GPS nécessite d'être en permanence en contact avec 4 satellites.<br/>
+			Son fonctionnement repose sur la méthode mathématique de <b>trilatération</b> que est expliquée sur une autre page de ce site.
+		</p>
+	</form>
+	</br>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+</html> 					<!-- balise qui referme la balise principale-->
+
