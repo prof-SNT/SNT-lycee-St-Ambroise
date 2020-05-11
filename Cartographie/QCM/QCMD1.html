@@ -1,0 +1,59 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>QCM</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleC.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	QCM1 sur la notion d'échelle en cartographie
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	<h1>  </h1>		<!-- balise qui permet de donner le titre principal de la page-->
+	<form name="quizz" >
+		<div>
+			A quoi correspond l'échelle indiquée sur une carte ?<br/>
+			<input type="radio" name="q1" value="0"/>La distance entre deux lignes de niveau<br/>
+			<input type="radio" name="q1" value="0"/>Une unité de mesure de distance<br/>
+			<input type="radio" name="q1" value="1"/>Le rapport entre la taille sur la carte et la taille réelle<br/>
+			<input type="text" name="rep1"  size="180" disabled /> 
+		</div><br/>
+		<div>
+			Si une carte est à l'échelle de 1/25 000, alors que représente 1cm sur la carte ?<br/>
+			<input type="radio" name="q2" value="1"/>250 m<br/>
+			<input type="radio" name="q2" value="0"/>2,5 km<br/>
+			<input type="radio" name="q2" value="0"/>25 km<br/>
+			<input type="text" name="rep2"  size="180" disabled /> 
+		</div><br/>
+		<div>
+			Deux villes sont distantes de 20 km. Quelle est l'échelle d'une carte qui les représente à 4 cm l'une de l'autre ?<br/>
+			<input type="radio" name="q3" value="0"/>4/20<br/>
+			<input type="radio" name="q3" value="1"/>1/500 000<br/>
+			<input type="radio" name="q3" value="0"/>1/50 000<br/>
+			<input type="text" name="rep3"  size="180" disabled /> 
+		</div><br/>
+		<div>
+			<input type="text" name="reponse"  size="180" disabled value="Une fois que vous aurez cliqué le bouton Valider, vous ne pourrez plus répondre à aucune question" /> <br/>
+			<input type="button" name="bouton" value="Valider" onClick="verification(0)" />
+		</div><br/>
+		<a href = "QCMD2.html"> Passer au QCM2 sur le repérage terrestre </a><br/><br/>
+		<a href = "QCMD.html"> Revenir à la page d'acceuil sur les QCM </a> 
+		<p id="explications" style="visibility:hidden;">
+			<img type="image" id="ph1" name="photo1" src="echelles.png"  alt=""  width="650" height="300"  />
+			<br/><br/>
+			<b><u>Compléments d'explications :</u></b><br/><br/>
+			<b>L’échelle graphique</b> est accessible visuellement avec des traits de proportions (la longueur du trait équivaut à la distance notée).<br/><br/>
+			<b>L’échelle numérique</b> est une proportion entre une distance sur la carte et son équivalent en réel. <br/><br/><br/><br/><br/><br/>
+			<img type="image" id="ph2" name="photo2" src="carte.png"  alt=""  width="1000" height="500"  />
+			</br><b>Ci contre quatre exemples</b>, de cartes représentant un même lieu avec différentes échelles.<br/><br/>
+			- Pour l'échelle au 1/1 000 000, 1cm sur la carte représente 10km sur le terrain.<br/><br/>
+			- Pour l'échelle au 1/150 000, 1cm sur la carte représente 1,5km sur le terrain ;<br/><br/>
+			- Pour l'échelle au 1/50 000, 1cm sur la carte représente 500m sur le terrain.<br/><br/>
+			- Pour l'échelle au 1/25 000, 1cm sur la carte représente 250m sur le terrain ;<br/><br/>
+		</p>
+	</form>
+	</br>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+</html> 					<!-- balise qui referme la balise principale-->
+
