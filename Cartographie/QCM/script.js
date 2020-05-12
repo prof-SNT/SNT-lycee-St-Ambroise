@@ -7,7 +7,7 @@ function verification(k) /* Fonction qui compte le nombre de bonnes réponses */
 						"20km = 2 000 000 cm, donc l'échelle est de 4/2 000 000=1/500 000."],
 						["le 15 représente la latitude et le 30 la longitude.",
 						"l'équateur partage la Terre en deux hémisphères, l'hémisphère Nord et l'hémisphère Sud.",
-						"le méridien de Greenwich est une ligne imaginaire qui sépare la moitié Ouest de la moitié Est de la Terre. Il passe par la ville de Greenwich en Angleterre"],
+						"le méridien de Greenwich est une ligne imaginaire qui sépare la moitié Ouest de la moitié Est de la Terre. Il passe par la ville de Greenwich en Angleterre."],
 						["le système GPS nous localise grâce à 4 satellites",
 						"le GPS est le système de géolocalisation américain",
 						"le concurrent européen du GPS est le système Galileo.  "],
