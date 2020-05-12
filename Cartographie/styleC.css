@@ -7,7 +7,7 @@ header							/*caractéristiques de l'entête*/
 	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
 	margin-left : 15px;						/*marge externe gauche*/
 	margin-right : 15px;					/*marge externe droite*/
-	font-size : 60px;						/*taille de la police*/
+	font-size : 55px;						/*taille de la police*/
 	font-weight : bold;						/*texte en gras*/
 	text-align : center;					/*texte centré*/
 }
@@ -54,10 +54,10 @@ section 							/* Balise pour le contenu principal de la page */
 	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
 	border-radius : 4px; 					/* bordure arrondie */
 	padding : 30px 30px 30px 30px; 				/* marges internes */
-	margin-left : 1200px; 					/* marge externe gauche */
-	margin-right : 100px;					/* marge externe droite*/
+	margin-left : 600px; 					/* marge externe gauche */
 	margin-bottom : 10px; 				/* marge externe basse */
 	min-width : 200px; 					/* largeur minimum du bloc */
+	max-width : 200 px;
 	min-height : 80px; 					/* hauteur minimum du bloc */
 	font-size:30px; 				/*taille de la police */
 }
@@ -67,14 +67,14 @@ section 							/* Balise pour le contenu principal de la page */
 li{
 	color:blue;					/*les titres h2 seront bleus */
 	font-weight:bold;			/*les titres h2 seront en gras*/
-	font-size:25px; 			/*taille de la police des titres h1*/
+	font-size:20px; 			/*taille de la police des titres h1*/
 }
 
 a 								/* Style des liens */
 {
 	color : rgb(50,50,255); 			/* Liens en bleu */
 	font-weight:bold;
-	font-size: 25px;
+	font-size: 22px;
 }
 
 a:hover 						/* Style des liens quand on passe la souris dessus */
@@ -86,13 +86,13 @@ div
 {
 	text-align:left;
 	color:black;
-	font-size:22px;
+	font-size:21px;
 	background-color : rgb(255,200,100); 		/* couleur de fond */
 	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
 	border-radius : 4px; 					/* bordure arrondie */
 	padding : 4px 4px 4px 4px; 				/* marges internes */
 	margin-top:3px;
-	margin-right : 200px;
+	margin-right: 50px;
 	margin-left:20px;
 }
 
@@ -114,10 +114,16 @@ footer
 	right : 0;								/*le pied de page se termine complétement à droite de la page*/
 }
 input{
-font-size:15px;
+	font-size:15px;
+	
 } 
 img{
-	float:right;
-	vertical-align:right;
+	
+	
+}
+iframe
+{
+		float : right;
+		margin-right : 50px;
 }
 	
