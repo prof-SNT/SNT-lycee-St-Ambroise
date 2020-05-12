@@ -7,7 +7,7 @@ header							/*caractéristiques de l'entête*/
 	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
 	margin-left : 15px;						/*marge externe gauche*/
 	margin-right : 15px;					/*marge externe droite*/
-	font-size : 60px;						/*taille de la police*/
+	font-size : 55px;						/*taille de la police*/
 	font-weight : bold;						/*texte en gras*/
 	text-align : center;					/*texte centré*/
 }
@@ -19,7 +19,7 @@ nav
 
 body
 {
-	background-image:url("fondEcran.png");
+	/*background-image:url("fondEcran2.png");*/
 }
 
 p		/* caractéristiques des paragraphes*/
@@ -53,12 +53,11 @@ section 							/* Balise pour le contenu principal de la page */
 	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
 	border-radius : 4px; 					/* bordure arrondie */
 	padding : 4px 4px 4px 4px; 				/* marges internes */
-	margin-left : 700px; 					/* marge externe gauche */
-	margin-right : 100px;					/* marge externe droite*/
+	margin-left : 450px; 					/* marge externe gauche */
 	margin-bottom : 10px; 				/* marge externe basse */
-	min-width : 200px; 					/* largeur minimum du bloc */
+	max-width : 900px; 					/* largeur minimum du bloc */
 	min-height : 80px; 					/* hauteur minimum du bloc */
-	font-size:30px; 				/*taille de la police */
+	font-size:28px; 				/*taille de la police */
 }
 
 
