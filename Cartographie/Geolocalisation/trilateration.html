@@ -1,0 +1,38 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>Trilatération</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleC.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+	<style type="text/css"> body{ background:url('../Historique/historique.png'); } </style>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	Trilatération
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	<br/>
+	<img type="image" src="calculDistance.png"  alt=""  width="600" height="210" style="float:right; margin-right:20px;" /><br/><br/>
+	<div style="max-width:700px;">
+		On considère un point M du globe sur lequel <b>un recepteur GPS</b> se situe (voir image ci-contre).<br/>
+		Lorsqu'il receptionne un signal émit par un satellite, le recepteur <b>connait l'heure de l'envoi et l'heure d'arrivée</b> de ce signal.
+		Il en déduit <b>le temps</b> qu'a mit le signal pour lui parvenir.<br/>
+		Connaissant la vitesse du signal ainsi que le temps de parcours, le recepteur <b>calcule la distance</b> qui le sépare du satellite (à l'aide de la formule v=d/t).
+	</div><br/><br/>
+	<img type="image"  src="trilateration2.png"  alt=""  width="330" height="375" style="float:right; margin-right:20px;" />
+	<div style="max-width:700px; background-color:rgb(255,230,150)">
+		En connaisant la distance qui nous sépare du satellite 1 (voir image ci-contre),
+		on peut en déduire que l'on se situe quelque part <b>sur le cercle C1</b> représenté sur le globe terrestre. <br/>
+		De la même façon, si l'on connait la distance qui nous sépare des deux autres satellites (2 et 3),
+		on en déduit que l'on se situe également <b>sur deux autres cercles C2 et C3</b> (voir image ci-contre).<br/>
+		Le recepteur satellite est donc positionné à <b>l'intersection des trois cercles.</b>
+	</div><br/><br/>
+	<div style="max-width:700px;">
+		En réalité pour affiner la position, <b>un quatrième satellite</b> est nécessaire afin de déterminer le décalage entre l’heure du récepteur gps et l’heure exacte fournie par les satellites.<br/>
+		En effet, une fois que les trois premiers satellites ont déterminé la position probable du recepeur, une vérification de la distance avec un quatrième satellite permet de repérer une éventuelle incohérence et de la corriger.
+	</div><br/><br/>
+	<div style="max-width:700px;background-color:rgb(255,255,100);">
+		<a href = "../cartographie.html"> Revenir au sommaire </a> 	
+	</div>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+ </html> 					<!-- balise qui referme la balise principale-->
