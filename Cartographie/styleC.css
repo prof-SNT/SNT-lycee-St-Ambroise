@@ -7,7 +7,7 @@ header							/*caractéristiques de l'entête*/
 	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
 	margin-left : 15px;						/*marge externe gauche*/
 	margin-right : 15px;					/*marge externe droite*/
-	font-size : 45px;						/*taille de la police*/
+	font-size : 40px;						/*taille de la police*/
 	font-weight : bold;						/*texte en gras*/
 	text-align : center;					/*texte centré*/
 }
@@ -74,7 +74,7 @@ a 								/* Style des liens */
 {
 	color : rgb(50,50,255); 			/* Liens en bleu */
 	font-weight:bold;
-	font-size: 22px;
+	font-size: 21px;
 }
 
 a:hover 						/* Style des liens quand on passe la souris dessus */
