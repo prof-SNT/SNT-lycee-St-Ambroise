@@ -55,7 +55,7 @@ section 							/* Balise pour le contenu principal de la page */
 	padding : 4px 4px 4px 4px; 				/* marges internes */
 	margin-left : 450px; 					/* marge externe gauche */
 	margin-bottom : 10px; 				/* marge externe basse */
-	max-width : 900px; 					/* largeur minimum du bloc */
+	max-width : 800px; 					/* largeur minimum du bloc */
 	min-height : 80px; 					/* hauteur minimum du bloc */
 	font-size:28px; 				/*taille de la police */
 }
