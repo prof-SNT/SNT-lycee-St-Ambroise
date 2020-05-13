@@ -86,7 +86,7 @@ div
 {
 	text-align:left;
 	color:black;
-	font-size:18px;
+	font-size:19px;
 	background-color : rgb(255,200,100); 		/* couleur de fond */
 	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
 	border-radius : 4px; 					/* bordure arrondie */
