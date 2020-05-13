@@ -7,7 +7,7 @@ header							/*caractéristiques de l'entête*/
 	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
 	margin-left : 15px;						/*marge externe gauche*/
 	margin-right : 15px;					/*marge externe droite*/
-	font-size : 55px;						/*taille de la police*/
+	font-size : 45px;						/*taille de la police*/
 	font-weight : bold;						/*texte en gras*/
 	text-align : center;					/*texte centré*/
 }
@@ -40,10 +40,10 @@ h1		/* caractéristiques des titres h1*/
 
 h2		/* caractéristiques des titres h2*/
 {
-	color:blue;					/*les titres h2 seront bleus */
+	
 	font-weight:bold;			/*les titres h2 seront en gras*/
 	text-decoration:underline;	/*les titres h2 seront soulignés*/
-	font-size:40px; 			/*taille de la police des titres h1*/
+	font-size:35px; 			/*taille de la police des titres h1*/
 }
 
 
@@ -86,7 +86,7 @@ div
 {
 	text-align:left;
 	color:black;
-	font-size:21px;
+	font-size:20px;
 	background-color : rgb(255,200,100); 		/* couleur de fond */
 	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
 	border-radius : 4px; 					/* bordure arrondie */
