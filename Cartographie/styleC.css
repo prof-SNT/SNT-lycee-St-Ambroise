@@ -126,4 +126,8 @@ iframe
 		float : right;
 		margin-right : 50px;
 }
+.convertisseur
+{
+	display : inline-block;
+}
 	
