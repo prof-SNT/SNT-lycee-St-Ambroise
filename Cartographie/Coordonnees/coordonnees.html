@@ -1,0 +1,64 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>Coordonnées</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleC.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+	<style type="text/css"> body{ background:url('../fond.png'); } </style>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	Coordonnées géographiques 
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	</br>
+	<img type="image" src="coordonnees.png"  alt=""  width="350" height="350" style="float:right;margin-right:20px;" />	
+	<div style="max-width:600px;">
+		On a déjà vu que <b>les coordonnées géographiques</b> permettent de se repérer sur le globe terrestre à l'aide de la latitude et de la longitude.<br><br>
+		<b>La latitude</b> peut s'écrire de deux manières différentes :<br>
+		- L'écriture <b>sexagésimale</b> qui est composée de la mesure de l'angle en degrés minutes secondes suivie de l'orientation (Nord ou Sud).<br>
+		- L'écriture <b>décimale</b>, positive ou négative suivant que l'on se trouve dans l'hémisphère nord ou dans l'hémisphère sud. La direction de la latitude est renseignée dans le signe (+ pour Nord et - pour Sud)<br><br>
+		<b>La longitude</b> peut s'écrire de deux manières différentes :<br>
+		- L'écriture <b>sexagésimale</b> qui est composée de la mesure de l'angle en degrés minutes secondes suivie de l'orientation (Ouest ou Est).<br>
+		- L'écriture <b>décimale</b>, positive ou négative suivant que l'on se trouve à l'Est ou l'Ouest du méridien de Greenwitch.<br><br>
+		On rappelle qu'il faut 60" (60 secondes) pour obtenir 1' (1 minute) et qu'il faut 60' (60 minutes) pour avoir 1°<br>
+		Il faut donc 3600" pour avoir 1°.
+	</div><br><br>
+	<form name="convertisseur">
+	<div style="background-color:rgb(255,255,100);max-width:600px;float:right;margin-right:20px">
+		<font size=+2 style="color:blue;"><b>Convertisseur sexagésimale-décimale d'une latitude</b></font><br>
+		Choisir des valeurs dans les champs souhaités (sexagésimale ou décimale) puis <b>appuyer sur la touche entrée</b> pour obtenir la conversion.<br><br>
+		<b>Latitude sexagésimale :</b><br>
+		<label> Degrés</label>
+		<input id="d" name="degres" type="text" size="5"  onkeypress="javascript:if (event.keyCode == 13) {convertion1();}" >
+		<label> Minutes</label>
+		<input id="m" name="minutes" type="text" size="5" onkeypress="javascript:if (event.keyCode == 13) {convertion1();}">
+		<label> Secondes</label>
+		<input id="s" name="secondes" type="text" size="5" onkeypress="javascript:if (event.keyCode == 13) {convertion1();}" >
+		<label> Orientation</label>
+		<select id="o" name= "orientation" onkeypress="javascript:if (event.keyCode == 13) {convertion1();}" value="N" style="font-size:16px;">
+			<option value="N">Nord
+			<option value="S">Sud
+		</select><br><br><br>
+		<label> <b>Latitude décimale :</b></label>
+		<input id="deci" name="decimal" type="text" size="8" onkeypress="javascript:if (event.keyCode == 13) {convertion2();}"><br>
+		Attention la virgule se note avec un ".", exemple : 5.32<br> <br>
+	</div>
+	</form>
+	<div style="max-width:600px;">
+		<b>Exemples :</b><br>
+		- Une latitude d'écriture sexagésimale : 15°12'36" N  s'exprime aussi à l'aide de l'écriture décimale : 15,19 (=15+12/60+36/3600)<br><br>
+		- Une latitude d'écriture sexagésimale : 33°21'18" S  s'exprime aussi à l'aide de l'écriture décimale : -33,355 (=-33+21/60+18/3600)<br><br>
+		- Une latitude d'écriture sexagésimale : 97°48'45" O  s'exprime aussi à l'aide de l'écriture décimale : -97,8125 (=-97+48/60+45/3600)<br><br>
+		- Une longitude d'écriture sexagésimale : 7°33'09" E  s'exprime aussi à l'aide de l'écriture décimale : 7,5525 (=7+33/60+9/3600)
+	</div><br><br>
+	<div>
+		Cliquer sur le liens suivants pour accéder aux TP avec Python :<br>
+		<a href="https://notebooks.gesis.org/binder/jupyter/user/prof-snt-site-s-cee-st-ambroise-nfe1bry8/tree/cartographie" target="_blank">TP Python</a>
+		
+	</div><br><br>
+	<div style="max-width:700px;background-color:rgb(255,255,100);">
+		<a href = "../cartographie.html"> Revenir au sommaire </a> 	
+	</div>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+</html> 					<!-- balise qui referme la balise principale-->
