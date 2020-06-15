@@ -1,0 +1,63 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>NMEA</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleC.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+	<style type="text/css"> body{ background:url('fondNMEA.png'); } </style>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	La trame NMEA 0183
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	<br/>
+	<img type="image" src="NMEA1.png"  alt=""  width="400" height="290" style="float:right; margin-right:20px;" /><br/>
+	<div style="margin-right:800px;">
+		<img type="image" src="NMEALogo.png"  alt=""  width="180" height="80" style="float:right; margin-right:20px;" />
+		<b><u>Que signifie NMEA ?</u></b><br>
+		<b>NMEA</b> est l'acronyme de : <b>National Marine & Electronics Association</b> qui est une association américaine de fabricants d'appareils électroniques maritimes dont l'un des objectifs est d'harmoniser et standardiser les équipements de la marine.
+	</div><br><br>
+	<div style="margin-right:800px;background-color:rgb(255,255,100)">
+		<b><u>Le Protocole NMEA 0183</u></b><br>
+		<b>Le standard NMEA 0183</b>  est un protocole de transmission de données (coordonnées géographiques, heure, vitesse ...) entre les instruments et équipements électroniques liés à la géolocalisation.<br>
+		Les données sont transmises sous la forme de chaînes de caractères codés en <b>ASCII</b>. On parle alors de <b>trame</b> ou encore de phrase
+	</div>	<br><br>
+	<div style="margin-right:800px;">
+		<b><u>Les différents types de trames</u></b><br>
+		Il existe en fait plusieurs types de trames qui ne contiennent pas exactement les mêmes informations.<br><br>
+		Chaque trame NMEA commence par un <b>$</b> suivi de deux informations sur la trame.<br><br>
+		Le deux premières lettres qui suivent le $ identifient <b>l'origine du signal</b>.<br> Ci dessous quelques exemples pour les situations où le signal provient d'une géolocalisation par satellites : <br>   
+		<b>BD</b> ou <b>GB</b> pour Beidou ;<br>
+		<b>GA</b> pour Galileo ;<br>
+		<b>GP</b> pour GPS ;<br>
+		<b>GL</b> pour GLONASS. <br><br>
+		Suivent ensuite trois lettres qui identifient <b>le type de trame</b> utilisée.<br>
+		Ci-dessous un tableau donnant différents types existants :<br><br>
+		<img type="image" src="typesTrame.png"  alt=""  width="600" height="280" style="margin-left:20px;" /><br><br>
+	</div>	<br><br>
+	<div style="margin-right:800px;background-color:rgb(255,255,100)">	
+		<b><u>Trame de type GLL</u></b> (positionnement Géographique Longitude Latitude)<br>
+		Type de trame qui donne la latitude, la longitude et l'heure.<br>
+		L'état <b>A</b> signifie que les données sont valides, l'état <b>V</b> qu'il y a une erreur quelque part, donc que les données ne sont pas valides<br><br>
+		<img type="image" src="Trame1.png"  alt=""  width="780" height="350" style="margin-left:20px;" /><br><br>
+	</div>	<br><br>
+	<img type="image" src="NMEA2.png"  alt=""  width="500" height="400" style="float:right;margin-right:20px;" />
+	<div style="margin-right:800px;">	
+		<b><u>Trame de type GGA</u></b> (Données d'acquisition de la position)<br>
+		Type de trame qui donne entre autres, l'heure, la latitude, la longitude et l'altitude.<br><br>
+		<img type="image" src="Trame2.png"  alt=""  width="780" height="250" style="margin-left:20px;" /><br><br>
+	</div>	<br><br>
+	<div style="margin-right:800px;background-color:rgb(255,255,100)">	
+		<b><u>Trame de type RMC</u></b> (Données minimales recommandées)<br>
+		Type de trame souvent utilisée pour les bateaux. Elle donne l'heure, la latitude, la longitude, la date, la vitesse et le cap.<br><br>
+		<img type="image" src="Trame3.png"  alt=""  width="780" height="90" style="margin-left:20px;" />
+	</div><br>
+	<div style="margin-right:800px;">
+		<a href = "TP trame NMEA.pdf" target="_blanck"> Accéder au TP sur les trames NMEA </a> 	
+	</div><br><br><br>
+	<div style="margin-right:800px;background-color:rgb(255,255,100)">
+		<a href = "../cartographie.html"> Revenir à la page précédente </a> 	
+	</div>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+ </html> 					<!-- balise qui referme la balise principale-->
