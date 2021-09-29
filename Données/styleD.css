@@ -1,0 +1,133 @@
+header							/*caractéristiques de l'entête*/
+{
+	color : rgb(0, 0, 0);				/*couleur de la police*/
+	background-color : rgb(130, 130, 255);	/*couleur de fond*/
+	border : 2px, black, solid;					/* taille en pixels, couleur et syle de la bordure*/
+	border-radius : 4px;					/*bordure arrondie*/
+	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
+	margin-left : 15px;						/*marge externe gauche*/
+	margin-right : 15px;					/*marge externe droite*/
+	font-size : 50px;						/*taille de la police*/
+	font-weight : bold;						/*texte en gras*/
+	text-align : center;					/*texte centré*/
+}
+
+nav
+{
+	float : left;								/* le menu flottera à gauche*/
+}
+
+body
+{
+	/*background-image:url("fond.jpg");*/
+}
+
+p		/* caractéristiques des paragraphes*/
+{
+	color:black;					/*les paragraphes seront bleus*/
+	text-align:left;			/*les paragraphes seront alignés à droite*/
+	font-size:22px; 			/*taille de la police des paragraphes*/
+}
+
+h1		/* caractéristiques des titres h1*/
+{
+	color:rgb(255,255,0);					/*les titres h1 seront rouges */
+	text-align:center;			/*les titres h1 seront centrés*/
+	font-weight:bold;			/*les titres h1 seront en gras*/
+	text-decoration:underline;	/*les titres h1 seront soulignés*/
+	font-size:70px; 			/*taille de la police des titres h1*/
+}
+
+h2		/* caractéristiques des titres h2*/
+{
+	
+	font-weight:bold;			/*les titres h2 seront en gras*/
+	text-decoration:underline;	/*les titres h2 seront soulignés*/
+	font-size:40px; 			/*taille de la police des titres h1*/
+}
+
+
+
+section 							/* Balise pour le contenu principal de la page */
+{
+	background-color : rgb(255,200,100); 		/* couleur de fond */
+	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
+	border-radius : 4px; 					/* bordure arrondie */
+	padding : 30px 30px 30px 30px; 				/* marges internes */
+	margin-left : 600px; 					/* marge externe gauche */
+	margin-bottom : 10px; 				/* marge externe basse */
+	min-width : 200px; 					/* largeur minimum du bloc */
+	max-width : 200 px;
+	min-height : 80px; 					/* hauteur minimum du bloc */
+	font-size:30px; 				/*taille de la police */
+}
+
+
+
+li{
+	color:blue;					/*les titres h2 seront bleus */
+	font-weight:bold;			/*les titres h2 seront en gras*/
+	font-size:25px; 			/*taille de la police des titres h1*/
+}
+
+a 								/* Style des liens */
+{
+	color : rgb(50,50,255); 			/* Liens en bleu */
+	font-weight:bold;
+	font-size: 21px;
+}
+
+a:hover 						/* Style des liens quand on passe la souris dessus */
+{
+	color:rgb(250,100,150); 			/* Liens en rouge quand on passe la souris dessus */
+}
+
+div
+{
+	text-align:left;
+	color:black;
+	font-size:19px;
+	background-color : rgb(140,190,255); 		/* couleur de fond */
+	border : 2px black solid; 				/* taille en pixels, couleur, styles de la bordure */
+	border-radius : 4px; 					/* bordure arrondie */
+	padding : 4px 4px 4px 4px; 				/* marges internes */
+	margin-top:3px;
+	margin-right: 50px;
+	margin-left:20px;
+}
+
+footer
+{
+	color : rgb(0, 0, 0);				/*couleur de la police*/
+	background-color : rgb(150, 150, 255);	/*couleur de fond*/
+	border : 2px, black, solid;					/* taille en pixels, couleur et syle de la bordure*/
+	border-radius : 4px;					/*bordure arrondie*/
+	padding : 15px, 15px, 15px, 15px;			/*magres internes*/
+	margin-left : 15px;						/*marge externe gauche*/
+	margin-right : 15px;					/*marge externe droite*/
+	font-size : 30px;						/*taille de la police*/
+	font-weight : bold;						/*texte en gras*/
+	text-align : center;					/*texte centré*/
+	position : absolute;					/*position absolue et non relative aux autres éléments de la page*/
+	bottom : 0;								/* hauteur = 0*/
+	left : 0;								/*le pied de page démarre complétement à gauche de la page*/
+	right : 0;								/*le pied de page se termine complétement à droite de la page*/
+}
+input{
+	font-size:15px;
+	
+} 
+img{
+	
+	
+}
+iframe
+{
+		float : right;
+		margin-right : 50px;
+}
+.convertisseur
+{
+	display : inline-block;
+}
+	
