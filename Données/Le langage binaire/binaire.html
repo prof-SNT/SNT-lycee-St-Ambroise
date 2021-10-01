@@ -1,0 +1,61 @@
+<!DOCTYPE html>				<!-- cette ligne indique qu'il s'agit bien d'une page html-->
+<html>						<!-- balise principale qui englobe tout le contenu de la page-->
+  <head>					<!-- balise d'entête de page-->
+    <meta charset="utf-8"/>	<!-- balise qui indique l'encodage du texte-->
+	<title>Langage binaire</title>	<!-- balise qui permet de donner un nom à l'onglet de la page-->
+	<link rel="stylesheet" href="../styleD.css" />		<!-- mise en place du CSS -->
+	<script src="script.js"> </script>
+	<style type="text/css"> body{ background:url('fond.png'); } </style>
+  </head>					<!-- balise qui referme la balise d'entête-->
+  <header>
+	Le langage binaire 
+  </header>
+  <body>					<!-- balise du corps de la page-->
+	</br>
+	<div style="max-width:800px;">
+		<h3><b><u>La base dix (écriture décimale) :</u></b></h3>
+		Les nombres que nous connaissons sont en base 10, c'est-à-dire que l’on utilise 10 symboles différents
+		(les chiffres arabes) pour représenter les nombres : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.<br><br>
+		Lorsque tous les symboles (les 10 chiffres arabes) ont été utilisés, les nombres vont alors s'écrire avec deux symboles :
+		10, 11, 12, ...19, 20, ..., 90, ..., 99.<br><br>
+		Lorsque toutes les combinaisons de deux symboles ont été utilisées, on va alors utiliser trois symboles : 100, 101, ...999.<br><br>
+		Ainsi de suite, on augmente le nombre de symboles utilisés.<br><br>
+	</div><br><br>
+	<div style="max-width:800px;">
+		<h3><b><u>La base deux (écriture binaire) :</u></b></h3>
+		Pour la base 2 (le langage binaire), le principe pour représenter les nombres est le même que pour la base 10, sauf que l'on n'utilise que deux symboles au lieu de dix : 0, 1.<br><br>
+		Lorsque tous les symboles ont été utilisés, les nombres vont alors s'écrire avec deux symboles : 10, 11.<br><br>
+		Lorsque toutes les combinaisons de deux symboles ont été utilisées, on va alors utiliser trois symboles : 100, 101, 110, 111.<br><br>
+		On utilise ensuite 4 symboles : 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111.<br><br>
+		Ainsi de suite, on augmente le nombre de symboles utilisés comme pour la base 10.<br><br>
+		Afin d'éviter de confondre un nombre écrit en base 10 avec un nombre écrit en base 2, on ajoute à la fin du nombre l'indice 2 pour indiquer qu'il
+		s'agit d'un nombre écrit en base 2. Exemple : 1101011<sub>2</sub>.<br><br>
+		Ci-dessous un tableau de correspondance entre la base 2 (binaire) et la base 10 (décimale) pour les nombres de 0 à 16.<br><br>
+		<img type="image" src="tableau.png"  alt=""  width="450" height="350" style="margin-left:20px;" />	
+		<br>
+	</div><br><br>
+	<div style="max-width:800px;">
+		<h3><b><u>Convertir un nombre de l'écriture décimale à l'écriture binaire :</u></b></h3>
+		Pour convertir un nombre de l'écriture décimale à l'écriture binaire, une méthode consiste à le diviser par 2
+		autant de fois que possible comme dans l'exemple ci-dessous.<br><br>
+		<img type="image" src="dec-bin.png"  alt=""  width="350" height="300" style="margin-left:20px;" />	<br><br>
+		Pour obtenir l'écriture binaire, on part du dernier quotient et on remonte la liste des restes. <br>
+		L'écriture binaire de 77 est donc : 1001101<sub>2</sub>.<br><br>
+	</div><br><br>
+	<div style="max-width:800px;">
+		<h3><b><u>Convertir un nombre de l'écriture binaire à l'écriture décimale :</u></b></h3>
+		Lorsque l'on utilise l'écriture décimale d'un nombre, le premier chiffre représente le nombre d'unités, 
+		le second chiffre le nombre de dizaines, le troisième chiffre le nombre de centaines ...<br>
+		Chaque chiffre est donc en correspondance avec une puissance de 10 comme dans l'exemple ci-dessous :<br>
+		57016= 5 &#215 10<sup>4</sup> + 7 &#215 10<sup>3</sup> + 1 &#215 10 + 6<br><br>
+		Pour transformer un nombre de la base 2 à la base 10, on utilise le principe précédent en remplaçant les puissances de 10 
+		par des puissances de 2 comme dans l'exemple ci-dessous :<br>
+		1001101<sub>2</sub> = 1 &#215 2<sup>6</sup> + 1 &#215 2<sup>3</sup> + 1 &#215 2<sup>2</sup> + 1 = 64 + 8 + 4 + 1 = 77 .<br>
+		1001101<sub>2</sub> correspond donc à 77 en base 10.<br><br>	
+		Autre exemple : 1110110<sub>2</sub> = 2<sup>6</sup> + 2<sup>5</sup> + 2<sup>4</sup> +  2<sup>2</sup> + 2<sup>1</sup>  = 64 + 32 + 16 + 4 + 2 = 118 .<br><br>
+	</div><br><br>
+		<div style="max-width:700px;background-color:rgb(180,220,255);">
+		<a href = "../donnees.html"> Revenir au sommaire </a> 	
+	</div>
+  </body>					<!-- balise qui referme la balise du corps de la page-->
+</html> 					<!-- balise qui referme la balise principale-->
